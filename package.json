@@ -1,0 +1,42 @@
+{
+  "name": "photosorganiser",
+  "version": "1.0.0",
+  "description": "organise photos by date taken and create shortcuts to location on lan network",
+  "main": "index.js",
+  "bin": {
+    "photosorganiser": "./bin/organiseLanPhotos.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.3",
+    "colors": "^1.1.2",
+    "fast-exif": "^0.2.0",
+    "mkdirp": "^0.5.1",
+    "resize-img": "^1.1.2",
+    "windows-shortcuts": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/http/git.git"
+  },
+  "keywords": [
+    "photo",
+    "network",
+    "organise",
+    "date",
+    "taken",
+    "shortcuts"
+  ],
+  "author": "Orce Marinkovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/http/git/issues"
+  },
+  "homepage": "https://github.com/http/git#readme"
+}
