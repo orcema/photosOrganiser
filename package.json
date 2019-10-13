@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/http/git.git"
+    "url": "git+https://github.com/orcema/photosOrganiser"
   },
   "keywords": [
     "photo",
@@ -34,9 +34,9 @@
     "shortcuts"
   ],
   "author": "Orce Marinkovski",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/http/git/issues"
+    "url": "https://github.com/orcema/photosOrganiser/issues"
   },
-  "homepage": "https://github.com/http/git#readme"
+  "homepage": "https://github.com/orcema/photosOrganiser#readme"
 }
