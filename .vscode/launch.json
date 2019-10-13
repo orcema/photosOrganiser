@@ -8,9 +8,9 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\bin\\photo.js",
-            // "args": ["D:\\tmp\\input","D:\\tmp\\output"]
-            "args": ["X:\\2TB-A\\Pictures\\2019","C:\\Users\\orce\\Pictures\\Pictures-YEAR-MONTH"]
+            "program": "${workspaceFolder}\\bin\\organiseLanPhotos.js",
+            "args": ["D:\\tmp\\input","D:\\tmp\\output"]
+            // "args": ["X:\\2TB-A\\Pictures\\2019","C:\\Users\\orce\\Pictures\\Pictures-YEAR-MONTH"]
         }
     ]
 }
