@@ -1,6 +1,6 @@
 {
   "name": "photosorganiser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "organise photos by date taken and create shortcuts to location on lan network",
   "main": "index.js",
   "bin": {

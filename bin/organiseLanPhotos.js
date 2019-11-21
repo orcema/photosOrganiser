@@ -14,13 +14,10 @@ var output = process.argv[3];
 var emitter = new EventEmitter();
 var logFile = "";
 
-if (!input && !output) {
-	console.error('neither input nor output path is specified'.red);
-	console.log('usage: photo /path/to/import/from /path/to/import/to'.cyan);
-	process.exit(-1);
-}
+validatePaths();
+
 var programName = path.basename(process.argv[1]).replace(".js","");
-logFile = output + "\\" + programName + "_Log_" + new Date().toISOString().replace(/:/g,"-").replace(/\./g,"-") + ".csv";
+logFile = path.join(output, programName + "_Log_" + new Date().toISOString().replace(/:/g,"-").replace(/\./g,"-") + ".csv");
 
 fs.appendFileSync(logFile,"timeStamp,action,src,dst,details" + "\n" );
 
@@ -68,4 +65,29 @@ importer({
 });
 
 
+
+function validatePaths() {
+	if (!input) {
+		console.error('input path is missing'.red);
+		console.log('usage: photo /path/to/import/from /path/to/export/to'.cyan);
+		process.exit(-1);
+	}
+	if (!output) {
+		console.error('output path is missing'.red);
+		console.log('usage: photo /path/to/import/from /path/to/export/to'.cyan);
+		process.exit(-1);
+	}
+	input = input.trim();
+	let inputExists = fs.existsSync(input);
+	if (!inputExists) {
+		console.error('input folder doesn\'t exist'.red);
+		process.exit(-1);
+	}
+	output = output.trim();
+	let outputExists = fs.existsSync(output);
+	if (!outputExists) {
+		console.error('outuput folder doesn\'t exist'.red);
+		process.exit(-1);
+	}
+}
 

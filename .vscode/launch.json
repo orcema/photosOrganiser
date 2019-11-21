@@ -9,8 +9,9 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\bin\\organiseLanPhotos.js",
-            "args": ["D:\\tmp\\input","D:\\tmp\\output"]
+            //"args": ["D:\\tmp\\input","D:\\tmp\\output"]
             // "args": ["X:\\2TB-A\\Pictures\\2019","C:\\Users\\orce\\Pictures\\Pictures-YEAR-MONTH"]
+             "args": ["\\\\192.168.20.201\\NAS_Synology\\2TB-A\\Pictures\\2018","\\\\192.168.20.201\\NAS_Synology\\2TB-A\\Pictures-YEAR-MONTH "]
         }
     ]
 }
